@@ -13,7 +13,6 @@ public class ServiceCoffeeImpl implements ServiceCoffee {
     @Override
     public void printCoffee() {
         menuService.menu("src/main/resources/price.txt");
-
         Coffee coffee;
         while (true) {
             int price = scannerService.readPrice();
@@ -26,12 +25,12 @@ public class ServiceCoffeeImpl implements ServiceCoffee {
                 coffee = new Coffee("Американо");
                 System.out.println("Вы выбрали " + coffee);
                 System.out.print("Спасибо за Ваш заказ!");
-               // return coffee;
+                // return coffee;
             } else if (price == 110) {
                 coffee = new Coffee("Капучино");
                 System.out.println("Вы выбрали " + coffee);
                 System.out.print("Спасибо за Ваш заказ!");
-               // return coffee;
+                // return coffee;
             } else {
                 System.out.println("Выберите снова!");
             }

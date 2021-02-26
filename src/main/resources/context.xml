@@ -13,5 +13,4 @@ https://www.springframework.org/schema/beans/spring-beans.xsd">
         <constructor-arg ref="serviceScanner"/>
     </bean>
 
-
 </beans>
